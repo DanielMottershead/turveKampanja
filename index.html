@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='index.Js'></script>
+</head>
+
+<body>
+
+    <header class="header hide" id="header">
+        <a href="index.html">Koti</a>
+        <a href="turveInfo.html">Turve</a>
+        <a href="video.html">Video</a>
+        <a href="tapahtumat.html">Tapahtumat</a>
+        <a href="info.html">Tietoa meistä</a>
+    </header>
+
+    <nav class="navi1" id="navi1">
+        <a href="index.html">Koti</a>
+        <a href="turveInfo.html">Turve</a>
+        <a class="current" href="video.html">Video</a>
+        <a href="tapahtumat.html">Tapahtumat</a>
+        <a href="info.html">Tietoa meistä</a>
+    </nav>
+    <div class="video-container">
+        <video playsinline autoplay muted loop id="bgvid">
+            <source src="esimerkkivid.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="logo">
+        <img src="logo1.jpg" id="logo" alt="">
+    </div>
+
+
+
+    <div class="text hide" id="text">
+        <h1>Ei Raivata Ilmastoamme Pilalle.</h1>
+        <button onclick="window.location.href='video.html'" class="button" id="button">Katso video</button>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

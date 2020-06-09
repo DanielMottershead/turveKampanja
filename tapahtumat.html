@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Video sivu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='index.Js'></script>
+</head>
+
+<body class="body1">
+    <div class="header1">
+
+        <img src="sll_logo.png" alt="sll" width="80">
+        <h1>Turve</h1>
+        <h3>Ei raivata ilmastoamme pilalle.</h3>
+    </div>
+
+    <nav class="navi">
+        <a href="index.html">Koti</a>
+        <a href="turveInfo.html">Turve</a>
+        <a href="video.html">Video</a>
+        <a class="current" href="tapahtumat.html">Tapahtumat</a>
+        <a href="info.html">Tietoa meistä</a>
+    </nav>
+
+    <div class="teksti">
+        <h3>Tapahtumat</h3>
+    </div>
+
+    <form class="form">
+        <div class="inputs">
+            <h3>Luo tapahtuma</h3>
+            <p>Järjestäjän nimi:</p>
+            <input class="inputField" id="jnimi" type="text" name="jnimi"><br>
+            <p>Päivämäärä:</p>
+            <input class="inputField" id="pvm" type="text" name="pvm"><br>
+            <p>Aika:</p>
+            <input class="inputField" id="aika" type="text" name="aika"><br>
+            <p>Paikka:</p>
+            <input class="inputField" id="paikka" type="text" name="paikka"><br>
+            <button type="button" name="button"
+                onclick="luotapahtuma(jnimi.value, pvm.value, aika.value, paikka.value, 0, [], 0)">Luo</button>
+        </div>
+    </form>
+
+    <div class="tapahtumat">
+        <p class="feed" id="feed">
+        </p>
+    </div>
+
+    <footer class="footer">
+        <ul>
+            <li>Suomen Luonnonsuojeluliitto</li>
+            <li></li>
+            <li>Yhteystiedot</li>
+            <li></li>
+            <li>Daniel Mottershead</li>
+            <li>Puhelinnumero +358445585518 arkisin (9-15)</li>
+            <li>daniel.mottershead@aalto.fi</li>
+            <li>Konemiehentie 2, 02150 Espoo</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
